@@ -1,0 +1,74 @@
+@charset "UTF-8";
+html, body {min-height: 100%;}
+#modal.modal-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0; 
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(1.5px);
+}
+#modal .modal-window {
+    background: rgba( 255, 255, 255 );
+    backdrop-filter: blur( 13.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    width: 400px;
+    height: 300px;
+    position: relative;
+    top: -50px;
+    padding: 10px;
+}
+#modal .title {
+    padding-left: 10px;
+    display: inline;
+    /* text-shadow: 1px 1px 2px gray; */
+    color: black;
+    
+}
+#modal .title h2 {
+    display: inline;
+}
+#modal .close-area {
+    display: inline;
+    float: right;
+    padding: 0 5px;
+    cursor: pointer;
+    background-color: red;
+    border: 1px solid red;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    /* text-shadow: 1px 1px 2px gray; */
+    color: whitesmoke;
+}
+
+#modal .content {
+    margin-top: 20px;
+    padding: 0px 10px;
+    /* text-shadow: 1px 1px 2px gray; */
+    color: black;
+}
+#modal .body {
+	height: 100px;
+}
+
+#modal input {
+	position: relative;
+	width: 85%;
+	margin-bottom: 10px;
+}
+
+#modal .box {
+	text-align: center; width: 100px;
+	margin: 10px; display: inline-block; 
+}
+
+#modal .modal-msg{
+	height: 24px;	
+}

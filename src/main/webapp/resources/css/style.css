@@ -1,0 +1,295 @@
+@charset "UTF-8";
+body {background-color: whitesmoke; background-size: auto; margin: 0px;}
+textarea {white-space: pre-line;}
+
+/* header */
+header::after {content: ""; clear: both; display: block;}
+header {width: 100%; margin: 0 auto;}
+header { background: rgb(32, 32, 32);}
+.header-content {width: 960px; margin: 0 auto;}
+header img {width: 200px; height: 70px; margin: 5px 0 0 5px;}
+header h3{width: 400px; float: right; margin: 35px 0 0 0; color: whitesmoke;}
+header > nav {width: 100%;  margin: 0 auto; background: rgb(66, 66, 66);}
+.nav-content {width: 960px; margin: 0 auto;}
+header nav ul { list-style: none; margin: 0; padding: 0;}
+header > nav li {display: inline-block; padding: 10px;}
+header > nav > ul li:first-child {padding: 15px 15px 15px 0;}
+header nav a {text-decoration: none; color: white; font-weight: bold;}
+
+/* main */
+main { width: 960px; margin: 0 auto;}
+article { width: 700px; float: left; padding-top: 20px;}
+
+.main-content::after {content: ""; clear: both; display: block;}
+.main-content { width: 700px; height: 150px; margin: 50px 0 0 0; border: 1px solid black; }
+.main-png img {width: 45%; height: 45%; float: left; padding: 8px 0 5px 5px;}
+.main-text {width: 300px; margin: 10px 10px 10px 30px; float: left;}
+.main-text h3 {margin: 0; }
+.main-text p {margin: 0; }
+
+.middle-content::after {content: ""; clear: both; display: block;}
+.middle-content {margin: 30px 0;border: 1px solid black;}
+.middle-content h2 {font-size: 28px; margin: 0;}
+.middle-content figure {display: inline-block; margin: 10px 30px 10px 10px; width: 300px;}
+.middle-content figure img {width: 63px; height:63px; float: left;}
+.middle-content figure figcaption { margin-left: 75px;}
+.middle-content figure figcaption h3{ margin: 0;}
+.middle-content figure figcaption p{ margin: 0;}
+
+.bottom-content::after {content: ""; clear: both; display: block;}
+.bottom-content {margin-top: 30px; margin-bottom: 30px; border: 1px solid black;}
+.bottom-content h2 { margin: 0;}
+.bottom-content figure {float: left; width: 140px; height: 150px; margin: 10px 45px; text-align: center;}
+.bottom-content figure img {width: 100px; height: 100px;}
+
+.notice-content {border: 1px solid black; margin-bottom: 20px;}
+.notice-content h3 {margin: 0;}
+.notice-content table { margin: 10px auto;}
+.notice-content tr {background-color: rgb(241,239,115);}
+.notice-content td {
+	padding: 10px; width: 300px;
+	border-radius: 5px;
+}
+.notice-content td:hover{
+	box-shadow: 0 0 2px 2px #ccc;
+}
+.notice-content a { text-decoration: none; color: black;}
+.notice-content p:first-child {  display: inline-block;}
+.notice-content div{border-bottom: 1px dotted black;}
+.notice-content span {  float: right; clear: both; max-width: 100px;}
+.notice-content p { margin: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 200px; }
+
+.gallery-content{
+	border: 1px solid black; margin-bottom: 20px;
+}
+.gallery-content h2{margin: 0; }
+.gallery-content .gall-img-box{
+	text-align: center;
+}
+.gallery-content figure{ 
+	display: inline-block;
+	margin: 10px; 
+}
+.gallery-content .gall-img-wrapper{
+	width: 200px; height: 200px;
+	margin: 0; overflow: hidden;
+	border-radius: 20px;
+}
+.gallery-content .gall-img-wrapper:hover{
+	box-shadow: 0 0 2px 2px #ccc;
+}
+.gallery-content img{
+	width: 100%; height: 100%;
+	object-fit: cover;
+}
+.gallery-content p { text-decoration: none; color: black;}
+
+/* .gallery-content::after{ clear: both; } */
+
+
+aside::after {content: ""; clear: both; display: block;}
+aside { width: 200px; float: right; text-align: center; padding-top: 20px}
+aside .loginbox {margin: 45px 35px 0 35px;}
+aside .loginbox a { width: 125px; height: 40px; }
+aside .loginbox a:hover {color:rgb(39, 39, 39); background: whitesmoke; border-color: whitesmoke;}
+aside .loginbox-after {margin: 45px 15px 0 15px; border: 1px solid black;}
+aside .loginbox-after > p:first-child { background-color: rgb(216,228,247);}
+/* footer */
+footer {
+    clear: both;
+    width: 100%;
+    margin: 0 auto;
+    background: rgb(24, 24, 24); 
+    padding: 25px 0;
+}
+.foote-content { width: 960px; margin: 0 auto;}
+footer address p {color:rgb(237, 237, 237); text-align: center; text-decoration: none ;}
+footer .validate p { float: right; margin: 0;}
+
+/* 링크형 버튼 공통사항 */
+.linkButton {
+    background: rgb(107, 107, 107);
+    border: 1px solid rgb(107, 107, 107); 
+    border-radius: 10px; color: whitesmoke;
+    text-align: center; display: table-cell; vertical-align: middle;
+    text-decoration: none;
+}
+.linkButton:hover { color:rgb(39, 39, 39); background: whitesmoke; border-color: whitesmoke;}
+.linkButton-active {
+	background: black;
+    border: 1px solid black; 
+    border-radius: 10px; color: whitesmoke;
+    text-align: center; display: table-cell; vertical-align: middle;
+    text-decoration: none;
+}
+
+/* 버튼태그 버튼 공통사항 */
+button {
+    width: 100px; height: 50px; 
+    background: rgb(107, 107, 107); 
+    border: 1px solid rgb(107, 107, 107); border-radius: 10px; color: whitesmoke }
+button:hover{ color:rgb(39, 39, 39); background: whitesmoke; border-color: whitesmoke;}
+.btn-wide-small { 
+	width: 70px; height: 25px; background: rgb(107, 107, 107); 
+    border: 1px solid rgb(107, 107, 107); border-radius: 10px; color: whitesmoke }
+
+/* 공지사항(게시판) 메인 */
+.notice-main {width: 720px;}
+.notice-main .top-space {height: 20px;}
+.notice-Table { margin: 0 auto; border-spacing: 0px; border-collapse: separate; width: 720px; }
+.notice-Table caption { padding: 10px 0 20px 0; color: rgb(78, 78, 78);}
+.notice-Table thead { background:rgb(107, 107, 107)}
+.notice-Table thead tr {  color:seashell}
+.notice-Table thead th {border-bottom: 1px solid rgb(58, 58, 58);}
+.notice-Table thead th:first-child { border-top-left-radius: 10px;}
+.notice-Table thead th:last-child { border-top-right-radius: 10px;}
+.notice-Table .no{ width: 100px;}
+.notice-Table .date{width: 100px;}
+.notice-Table tbody tr {color: rgb(39, 39, 39); text-align: center;}
+.notice-Table tbody td {
+    padding: 8px; background-color: rgb(44, 44, 44);
+    color: seashell;  border-top: 1px solid rgb(59, 59, 59); 
+    border-bottom: 1px solid rgb(0, 0, 0); 
+}
+    
+.notice-Table tbody tr:last-child td:first-child { border-radius: 0 0 0 10px;}
+.notice-Table tbody tr:last-child td:last-child {border-bottom-right-radius: 10px;}
+.notice-Table tbody td a { text-decoration: none; color: seashell;}
+.notice-Table tbody .title {text-align: left;}
+.notice-Table tbody .title p {overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin:0; width:300px;}
+.notice-Table tbody .text-muted {color: gray;}
+
+.notice-writebox { padding: 10px; float: right; height: 50px;}
+.notice-writebox a {width:100px; height: 50px; line-height: 50px;}
+.notice-writebox a:hover {color:rgb(39, 39, 39); background: whitesmoke; border-color: whitesmoke;}
+
+.notice-index {clear: both; height: 300px; text-align: center;}
+.notice-index .box { width: 50px; height: 50px; display: inline-block; padding-top: 10px;}
+.notice-index .box a { width:50px; height: 50px;}
+
+/* 글쓰기 메인 */
+.write-main {width: 720px; height: 700px;text-align: center;}
+.write-main .top {height: 100px; border-bottom: 2px solid rgb(107, 107, 107);}
+.write-main .title input {width: 640px; margin: 3px; padding: 5px;}
+.write-main .title {border-bottom: 2px solid rgb(107, 107, 107);}
+.write-main .content textarea{ resize: none; margin: 5px; }
+.write-main .content { border-bottom: 2px solid rgb(107, 107, 107); }
+.write-main .pass { display: inline-block; margin: 20px 10px; }
+.write-main .cancle {display: inline-block; margin: 40px 10px 0;}
+.write-main .cancle a {width: 100px; height: 50px; border: none;}
+.write-main .fileAdd {text-align: right; }
+.write-main .fileAdd input {max-width: 210px;}
+
+
+/* 회원가입 약관 메인*/
+.contract {width: 550px; height: 700px;;text-align: center;}
+.contract h2 { padding: 60px 60px;}
+.contract textarea {float: right; resize: none; padding: 0px;}
+.contract .check {clear: both; float: right; margin: 10px 0;}
+.contract .signinbox {clear: both; float: right; margin-top: 30px;}
+.contract .signinbox a { width:100px; height: 40px; }
+.contract .signinbox a:hover {color:rgb(39, 39, 39); background: whitesmoke; border-color: whitesmoke;}
+.contract .bottom {clear: both;}
+
+/* 회원가입 메인 */
+.signup-main {max-width: 400px; min-height: 700px; text-align: center;}
+.signup-main ul {list-style: none; padding: 0 ;margin: 80px 0 20px 0;}
+.signup-main li { margin: 10px 0; clear: both;}
+.signup-main li:first-child { margin-bottom: 0; }
+.signup-main .idValid-box { margin: 1px 0 10px; display: inline-block; float:right;}
+
+.signup-main li:nth-child(2) { margin-top: 0;}
+.signup-main label {display:block; text-align:left; margin: 5px 0; font-weight: bold;}
+.signup-main input {
+ display:inline-block; padding: 10px; width: 380px; 
+ font-size: 18px; border: 1px solid black; outline: none; 
+ border-radius: 10px; border-style: inset;
+}
+.signup-main input:focus{box-shadow: 0 0 2px 2px #222; border: 1px solid transparent;}
+.signup-main .signupbox, .signup-main .canclebox { display: inline-block; }
+.signup-main .msg { display: inline-block; float: left; color: red; margin: 1px 0 10px; height: 24px;}
+.signup-main li:last-child .msg {margin: 0; clear: both;}
+.signup-main .bottom-box {height: 40px;}
+.signup-main button{ outline: none;}
+.signup-main button:focus{ box-shadow: 0 0 3px 2px black; background-color: whitesmoke; color: black;}
+
+/* 로그인 메인 */
+.login-main {width: 420px; min-height: 500px; text-align: center;}
+.login-main ul {list-style: none; padding: 0 ;margin-top: 170px;}
+.login-main li {  margin: 20px 0;}
+.login-main li:last-child {margin-bottom: 5px;}
+.login-main label { margin: 10px 0 10px; font-weight: bold; display: inline-block;}
+.login-main input { padding: 10px; width: 398px; font-size: 18px; border: 1px solid rgb(107, 107, 107); border-radius: 10px; outline: none; }
+.login-main input:focus {box-shadow: 0 0 3px 2px #222;}
+.login-main input:first-child:focus{box-shadow: 0 0 0 0;}
+.login-main .loginbox { width: 420px; margin-top: 20px;}
+.login-main .loginbox a { width:420px; height: 40px; }
+.login-main p {margin: 0; text-align: left;}
+.login-main p input {margin: 0; width: 20px; }
+
+/* 갤러리 메인 */
+.gallery-main { width: 960px; min-height: 800px; margin-top: 80px;}
+/* .gallery-main .content::after {content: ""; clear: both; display: block;} */
+.gallery-main .content { margin-top: 50px; margin-bottom: 100px; }
+.gallery-main .content h2 {
+	margin: 25px; text-align: center; 
+	background: rgb(192, 192, 192);
+}
+.gallery-main .content a{
+	text-decoration: none; color: black;
+}
+.gallery-main .content .row {display: inline-block; margin: 0 25px;}
+.gallery-main .content .col {display: inline-block; margin: 22px;}
+.gallery-main .content .gallList-img-box {
+	width: 250px; height: 250px;
+	overflow: hidden; margin: 0 auto;
+}
+.gallery-main .content img{
+	width: 100%; height: 100%;
+	object-fit:cover;
+}
+
+.gallery-main .notice-writebox { float: right; } 
+.gallery-main .notice-index { clear: both; } 
+.gallery-main .notice-writebox { height: 50px; } 
+.gallery-main .notice-writebox a { width: 100px; height: 50px; } 
+/* .gallery-main .content figure {float: left; width: 140px; height: 150px; margin: 10px 45px; text-align: center; border-bottom: 1px solid snow;}
+.gallery-main .content figure img {width: 100px; height: 100px;} */
+
+/* 게시판 상세 메인 */
+.detail-main { width: 720px; min-height: 700px;text-align: center;}
+.detail-main .top { height: 100px; border-bottom: 2px solid rgb(107, 107, 107);}
+.detail-main .titleBox { height: 20px; border-bottom: 2px solid rgb(107, 107, 107); padding: 10px; }
+.detail-main .title { float: left; margin: 0;}
+.detail-main .id { float: right; margin: 0px; margin-right: 15px; }
+.detail-main .date { float: right; margin: 0;}
+.detail-main .content {min-height: 300px; text-align: left; border-bottom: 2px solid rgb(120, 120, 120); padding: 10px; white-space: pre-line; }
+.detail-main img {
+	width: 60%;
+}
+.detail-main .attachs {border-bottom:2px solid rgb(107, 107, 107); text-align: right;}
+.detail-main .attachs p:first-child {float:left; clear: both;}
+.detail-main .attachs p {
+ display: inline-block; margin: 5px; 
+ color: rgb(100,100,100); max-width: 100px; max-height: 21px; 
+ overflow: hidden;text-overflow: ellipsis; white-space: nowrap;
+}
+.detail-main .attachs p a { text-decoration: none;}
+.detail-main .list, .detail-main .modify, .detail-main .remove {float: right; margin: 20px 10px;}
+.detail-main .reply-writer {clear: both;}
+
+.detail-main .reply-wrapper {clear: both; display: block; text-align: left;}
+.detail-main .reply-wrapper .card-header { border: 1px solid black; border-bottom: none; background-color: black; color: whitesmoke;}
+.detail-main .reply-wrapper .card-header p{display: inline-block; margin: 0; padding: 10px; }
+.detail-main .reply-wrapper .card-header p:last-child {float: right; clear: both; }
+.detail-main .reply-wrapper .card-body { border: 1px solid black; margin-bottom: 10px; padding:  10px;}
+
+
+/* 글수정 메인 */
+.modify-main { width: 720px; height: 700px;text-align: center;}
+.modify-main .top { height: 100px; border-bottom: 2px solid rgb(107, 107, 107);}
+.modify-main .title input { width: 500px; margin: 3px; padding: 5px;}
+.modify-main .title { border-bottom: 2px solid rgb(107, 107, 107);}
+.modify-main .content textarea{ resize: none; margin: 5px;}
+.modify-main .content { border-bottom: 2px solid rgb(107, 107, 107); }
+.modify-main .modify, .modify-main .cancle { display: inline-block; margin: 20px 10px; }

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+.modify-main {width: 720px; height: 700px;text-align: center;}
+.modify-main .top {height: 100px; border-bottom: 2px solid rgb(107, 107, 107);}
+.modify-main .title input {width: 640px; margin: 3px; padding: 5px;}
+.modify-main .title {border-bottom: 2px solid rgb(107, 107, 107);}
+.modify-main .content textarea{ resize: none; margin: 5px; }
+.modify-main .content { border-bottom: 2px solid rgb(107, 107, 107); }
+.modify-main .pass { display: inline-block; margin: 20px 10px; }
+.modify-main .cancle {display: inline-block; margin: 40px 10px 0;}
+.modify-main .cancle a {width: 100px; height: 50px; border: none;}
+.modify-main .fileAdd {text-align: right; padding-right: 30px; }
+.modify-main .fileAdd input {max-width: 210px;}
+.modify-main .fileAdd label {text-decoration: underline; color: blue;}
+.modify-main .fileAdd label:hover { cursor: pointer;}

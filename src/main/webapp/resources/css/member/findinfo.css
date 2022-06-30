@@ -1,0 +1,114 @@
+@charset "UTF-8";
+main {
+	min-height: 700px;
+	text-align: center;
+}
+
+.main-header{
+	margin: 75px 0;
+}
+
+.main-content{
+	min-height: 400px;
+	width: 500px;
+	margin: 0 auto;
+	border: none; border-radius: 10px;
+	box-shadow: 0 0 2px 3px #08f;
+	padding: 50px;
+}
+
+.emailBox {
+	width: 400px;
+	/* height: 200px; */
+	margin: 0 auto;
+	
+}
+
+label {
+	display: block;
+	margin:0;
+	text-align:left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+input {
+	font-size: 18px;
+	/* font-weight: bold; */
+	width: 250px; 
+	margin: 45px 0 10px; padding: 10px;
+	display: inline-block;
+	border-color: transparent;
+	box-shadow: 0 0 2px 2px #333;
+	border-radius: 10px;
+	outline: none;
+}
+
+input:focus{
+	border-color: transparent;
+	box-shadow: 0 0 2px 3px #08f;
+	
+}
+
+.emailBox input, .emailBox button{
+	margin-top: 10px;
+}
+
+button::after {
+	clear: both;
+}
+
+button {
+	margin: 45px 10px 10px;
+	height: 45px;
+	width: 80px; 
+	display: inline-block;
+}
+
+button:hover {
+	border: transparent;
+	box-shadow: 0 0 2px 3px #08f;
+	background-color: whitesmoke;
+	outline: none;
+}
+
+.emailBox p {
+	margin: 0; padding: 0 10px;
+	/* border: 1px solid black; */
+	text-align: left;
+}
+
+.findBox{
+	display: none;
+	width: 400px;
+	margin: 0 auto;
+}
+
+.findBox #find-id, .findBox #find-pwd {
+	width: 95%;
+	display: block;
+	padding: 0;
+	margin: 25px auto;
+}
+
+.findBox #id-auth, .findBox #pwd-auth {
+	display: none;
+	margin: 0 auto;
+}
+
+.findBox #authNumCheck {
+	display: none;
+	margin-top: 20px;
+}
+
+
+
+.btnBox{
+	width: 400px; margin: 0 auto;
+	margin-bottom: 50px;
+	
+}
+
+#login-btn{
+	
+}
